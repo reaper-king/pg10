@@ -1,2 +1,4 @@
-# pg10
-Dockerfile for building postgres 10 with temporal tables
+# Postgresql version 10
+Building a docker image for Postgresql version 10
+this installs and enables the temporal_tables extention. 
+
