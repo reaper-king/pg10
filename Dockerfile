@@ -56,7 +56,10 @@ RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/10/main/pg_hba.con
 USER postgres
 
 RUN    /etc/init.d/postgresql start &&\
-    psql --command "CREATE EXTENSION temporal_tables;"
+    psql --command "CREATE EXTENSION temporal_tables;"&&\
+    psql --command "ALTER SYSTEM SET max_connections = 288;" &&\
+    psql --command "ALTER SYSTEM SET max_prepared_transactions  = 256;"
+
 
 
 
