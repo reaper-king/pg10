@@ -6,3 +6,7 @@ This installs and enables the temporal_tables extention.
 `docker build -t imagename:tag`
 
 `docker run -d -e POSTGRES_PASSWORD=mypassword storsys/pg10:main`
+>storsys/pg10 is the image name
+
+
+>main is the tag
